@@ -4,7 +4,7 @@ using EntityLayer.Concrete;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EfCommentRepositoy : GenericRepository<Comment>, ICommentDal
+    public class EfCommentRepository : GenericRepository<Comment>, ICommentDal
     {
     }
  
