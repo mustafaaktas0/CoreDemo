@@ -1,6 +1,11 @@
 ﻿@model IEnumerable<EntityLayer.Concrete.Comment>
 <div class="comment-top">
     <h4>Yorumlar</h4>
+    @if (Model.Count() == 0)
+    {
+        <h5>İlk Yorumu Siz Yapın</h5>
+        <marquee behavior=alternate> <font color="red">Hayde acele  et</font></marquee>
+    }
 
     @foreach (var item in Model)
     {
@@ -13,7 +18,7 @@
                     @item.CommentContent
                 </p>
 
-                
+
             </div>
         </div>
     }
