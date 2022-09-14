@@ -10,12 +10,15 @@ namespace EntityLayer.Concrete
     public class Writer
     {
         [Key]
-        public int WirterID { get; set; }
-        public string WirterName { get; set; }
-        public string WirterAbout { get; set; }
-        public string WirterImage { get; set; }
+        public int WriterID { get; set; }
+        public string WriterName { get; set; }
+        public string WriterAbout { get; set; }
+        public string WriterImage { get; set; }
         public string WriterMail { get; set; }
         public string WriterPassword { get; set; }
         public bool WirterStatus { get; set; }
+        public List<Blog> Blogs { get; set; }
+        public string WriterCity { get; set; }
+
     }
 }
